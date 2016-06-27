@@ -21,7 +21,11 @@ var anim = bodymovin.loadAnimation(animData);
 			color: "#aaddd8",
 			background: "#fff"
 		})
-	})
+	}) 
+
+	$("window").scroll(function(){
+    	anim.play();
+	});
 
 }); 
 

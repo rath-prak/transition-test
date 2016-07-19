@@ -1,57 +1,3 @@
-@font-face { font-family: boldFont; src: url(../fonts/hugefont.woff); }
-@font-face { font-family: bookItalic; src: url(../fonts/BookItalic.otf); }
-
-
-header {
-    position: relative;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-p {
-	font-family: bookItalic;
-	font-size: 20px;
-	color: #fff;
-	margin-top: 0px;
-}
-
-#main-header {
-	font-family: boldFont;
-	font-size: 90px;
-	color: #fff;
-	margin-top: 250px;
-	margin-bottom: 10px;
-
-/*	display: table-cell;
-	vertical-align: middle;
-	width: 100%;
-	height: 100%;*/
-}
-
-.main-button {
-	width: 200px;
-	height: 50px;
-	background: transparent;
-	border-radius: 40px;
-	border: 1px solid #fff;
-	color: white;
-	font-size: 20px;
-	font-family: boldFont;
-	cursor: pointer;
-	line-height: 50px;
-	transition: background 1.5s ease, color 1.5s ease;
-}
-
-.main-button:hover {
-	background: #fff;
-	color: #ec5c5d;
-
-}
-
-.main-button:focus {
-	outline: none;
-}
-
 #background {
     width: 100%; 
     height: 100%; 
@@ -62,10 +8,36 @@ p {
 }
 
 #container {
-    width:100%;
-    height:100%;
-    background: #ec5c5d;
+    width: 100vw;
+    height:100vh;
     transform: scale(2.5);
 }
 /*
 need to figure out a way in AE to export the vectors animation without a mask maybe try bringingint the brackets*/
+
+body {
+  background: #ec5c5d;
+}
+
+.logo-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  text-align: center;
+}
+
+#logo {
+  width: 70%;
+  fill: transparent;
+  stroke: #fff;
+  transform: translateY(15px)
+}
+#tag-line {
+  width: 75%;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  fill: transparent;
+  
+}

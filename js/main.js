@@ -20,7 +20,9 @@ $(document).ready(function(){
 
 			var fillBackground = $('#logo')
 			var tagLine = $('#tag-line')
-			var tl = new TimelineMax();
+			var tl = new TimelineMax()
+			var logoWrapper = $('.logo-wrapper')
+			var bodyIntro = $('.intro-body')
 
 			function fillLogo(){
 				tl.to(fillBackground, 2, {
@@ -33,7 +35,10 @@ $(document).ready(function(){
 					fill : '#fff'
 				},
 				ease: Bounce.easeOut
-				})
+				}).to(logoWrapper, .25, {
+					opacity: 0,
+					delay: 2
+				}).to(bodyIntro, 2, )
 			}	
 		})// end of function
 

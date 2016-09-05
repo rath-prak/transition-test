@@ -1,4 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400italic);
+@font-face {
+    font-family: bookItalic;
+    src: url(../fonts/BookItalic.otf);
+}
 
 #background {
     width: 100%; 
@@ -21,12 +24,19 @@ body {
   background: #ec5c5d;
 }
 
+.amimate-container {
+  background: #ec5c5d;
+  visibility: visible;
+  z-index: 10;
+}
+
 .logo-wrapper {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); 
   text-align: center;
+  z-index: 20;
 }
 
 #logo {
@@ -44,25 +54,32 @@ body {
   
 }
 
+.main {
+  background: teal;
+}
+
 .intro-body {
-	width: 40%;
+	width: 35%;
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%); 
-
+	transform: translate(-50%, -50%);
+  z-index: -10;
+  visibility: hidden;
 }
 
 h1 {
 	font-family: sans-serif;
 	color: #fff;
+  font-size: 38px;
+  margin-bottom: 7px;
 }
 
 .intro-body p{
-	font-family: 'Libre Baskerville', serif;
+	font-family: bookItalic;
 	color: #fff;
-	font-size: 30px;
-
+	font-size: 16px;
+  line-height: 1.5;
 }
 
 
